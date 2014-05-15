@@ -47,7 +47,7 @@ var chart = {
       var yearMin = _.min(data);
 			return {year: +k, data: data, mean: yearAve, max: yearMax, min: yearMin};
 		});
-  	this.data.meanTemp = {data: dataset.reverse() , extent: [-2, 16]};
+  	this.data.meanTemp = {data: dataset.reverse() , extent: [-.2, .2]};
 
 
   	d3.select('body').style('height', this.bodyHeight + 'px');
